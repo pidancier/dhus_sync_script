@@ -8,3 +8,6 @@ curl --basic -u ${DLOGIN}:${DPASS} -d @body.tmp \
    http://${DHOST}/odata/v1/Synchronizers
 
 rm body.tmp
+
+echo ""
+

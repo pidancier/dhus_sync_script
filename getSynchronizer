@@ -3,3 +3,5 @@
 curl --basic -u ${DLOGIN}:${DPASS} \
    "http://${DHOST}/odata/v1/Synchronizers($1)"
 
+echo ""
+

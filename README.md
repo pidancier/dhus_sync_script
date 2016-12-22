@@ -17,7 +17,7 @@ Parameters between brackets ([]) are optional.
 
 Create a Synchroniser:  
 ```
-./createSynchronizer <-D_SCHEDULE=cron_expression> <-D_SERVICEURL=URL_to_remote_DHuS_to_sync> <-D_SERVICELOGIN=account> <-D_SERVICEPASSWORD=password> [-D_LABEL=my_sync] [-D_PAGESIZE=X] [-D_REQUEST=start|stop] [-D_REMOTEINCOMING=path/to/mountpoint/] [-D_COPYPRODUCT=true|false] [-D_FILTERPARAM=filter_expression] [-D_SOURCECOLLECTION=resource/path] [-D_LASTINGESTIONDATE=date]
+./createSynchronizer <-D_SCHEDULE=cron_expression> <-D_SERVICEURL=URL_to_remote_DHuS_to_sync> <-D_SERVICELOGIN=account> <-D_SERVICEPASSWORD=password> [-D_LABEL=my_sync] [-D_PAGESIZE=X] [-D_REQUEST=start|stop] [-D_COPYPRODUCT=true|false] [-D_FILTERPARAM=filter_expression] [-D_SOURCECOLLECTION=resource/path] [-D_LASTCREATIONDATE=date]
 ```
 
 List synchronisers / print a synchroniser:  

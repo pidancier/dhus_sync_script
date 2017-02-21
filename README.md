@@ -17,7 +17,7 @@ Parameters between brackets ([]) are optional.
 
 Create a Synchroniser:  
 ```
-./createSynchronizer <-D_SCHEDULE=cron_expression> <-D_SERVICEURL=URL_to_remote_DHuS_to_sync> <-D_SERVICELOGIN=account> <-D_SERVICEPASSWORD=password> [-D_LABEL=my_sync] [-D_PAGESIZE=X] [-D_REQUEST=start|stop] [-D_COPYPRODUCT=true|false] [-D_FILTERPARAM=filter_expression] [-D_SOURCECOLLECTION=resource/path] [-D_LASTCREATIONDATE=date]
+./createSynchronizer <-D_SCHEDULE=cron_expression> <-D_SERVICEURL=URL_to_remote_DHuS_to_sync> <-D_SERVICELOGIN=account> <-D_SERVICEPASSWORD=password> [-D_LABEL=my_sync] [-D_PAGESIZE=X] [-D_REQUEST=start|stop] [-D_COPYPRODUCT=true|false] [-D_FILTERPARAM=filter_expression] [-D_SOURCECOLLECTION=resource/path] [-D_LASTCREATIONDATE=date] [-D_GEOFILTER=geofilter]
 ```
 
 List synchronisers / print a synchroniser:  
@@ -28,6 +28,8 @@ Delete a synchroniser:
 
 Update a synchroniser:  
 ```./updateSynchronizer <synchroniser id> [any options accepted by createSynchronizer]```
+
+There are options to nullify nullable properties: -D_LABEL_NULL, -D_FILTERPARAM_NULL, -D_SOURCECOLLECTION_NULL, -D_GEOFILTER_NULL
 
 Start a synchroniser:  
 ```./startSync <synchroniser id>```

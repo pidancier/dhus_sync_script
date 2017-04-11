@@ -27,6 +27,8 @@ ifnempty(`_SOURCECOLLECTION', `         <d:SourceCollection>_SOURCECOLLECTION</d
 ifdef(`_SOURCECOLLECTION_NULL', `        <d:SourceCollection m:null="true" />', `dnl')
 ifnempty(`_GEOFILTER', `        <d:GeoFilter>_GEOFILTER</d:GeoFilter>', `dnl')
 ifdef(`_GEOFILTER_NULL', `        <d:GeoFilter m:null="true" />', `dnl')
+ifnempty(`_REMOTEINCOMING', `        <d:RemoteIncoming>_REMOTEINCOMING</d:RemoteIncoming>', `dnl')
+ifdef(`_REMOTEINCOMING_NULL', `        <d:RemoteIncoming m:null="true" />', `dnl')
       </m:properties>
    </content>
 </entry>
